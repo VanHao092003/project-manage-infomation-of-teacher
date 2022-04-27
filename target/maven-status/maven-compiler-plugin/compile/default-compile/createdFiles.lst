@@ -1,0 +1,8 @@
+com/projectmvc/configuration/Configuration.class
+com/projectmvc/serviceImpl/ServiceImplmentation.class
+com/projectmvc/Service/Service.class
+com/projectmvc/DAOImpl/DAOImplementation.class
+com/projectmvc/controller/Controller.class
+com/projectmvc/DAO/DAO.class
+com/projectmvc/configuration/WebInitalizer.class
+com/projectmvc/model/Person.class
