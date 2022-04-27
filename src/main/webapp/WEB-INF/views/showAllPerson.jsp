@@ -33,6 +33,7 @@
  				<th>${person.fine }</th>
  				<th><a href='<c:url value="/chi-tiet-nguoi-dung/${person.code}"/>'>chi tiet</a></th>
  				<th><a href='<c:url value="/delete/${person.code}"/>'><button>xoa</button> </a></th>
+ 				<th><a href='<c:url value="/update/${person.code}"/>'><button>update</button> </a></th>
  			</tr>
  		</c:forEach>
 	</table>

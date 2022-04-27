@@ -54,6 +54,23 @@ public class Controller {
 		return "redirect:/showAllPerson";
 	}
 	
+	@RequestMapping(value="/update/{ID}", method = RequestMethod.GET)
+	public String updatePerson(HttpServletRequest httpServletRequest, @PathVariable("ID") String ID) {
+		Person person = service.showTeacher(ID);
+		httpServletRequest.setAttribute("person2", person);
+		return"update";
+	}
+	
+	@RequestMapping(value="/update", method = RequestMethod.POST)
+	public String updatePerson(HttpServletRequest httpServletRequest, @ModelAttribute("person2") @Valid Person person, BindingResult 
+			bindingResult) {
+		if(bindingResult.hasErrors()) {
+			return"update";
+		}
+		service.updateInformation(person);
+		return"redirect:/showAllPerson";
+	}
+	
 	
 	
 	

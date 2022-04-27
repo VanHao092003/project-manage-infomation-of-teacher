@@ -29,8 +29,8 @@ public class DAOImplementation implements DAO{
 
 	@Override
 	public void updateInformation(Person person) {
-		String mySQl = "update Person set ID=?, fullName = ?, age=?, homeTown=?, hardSalary=?, bonus=?, fine=?";
-		jdbcTemplate.update(mySQl,person.getCode(),person.getName(),person.getAge(),person.getHomeTown(),person.getHardSalary(),person.getBonus(),person.getFine());
+		String mySQl = "update Person set fullName = ?, age=?, homeTown=?, hardSalary=?, bonus=?, fine=? where ID = ?";
+		jdbcTemplate.update(mySQl,person.getName(),person.getAge(),person.getHomeTown(),person.getHardSalary(),person.getBonus(),person.getFine(), person.getCode());
 	}
 
 	@Override
