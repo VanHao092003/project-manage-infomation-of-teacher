@@ -32,11 +32,6 @@ public class ServiceImplmentation implements com.projectmvc.Service.Service{
 		return dao.showAllPersons();
 	}
 
-	@Override
-	public int salary() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
 	@Override
 	public Person showTeacher(String ID) {

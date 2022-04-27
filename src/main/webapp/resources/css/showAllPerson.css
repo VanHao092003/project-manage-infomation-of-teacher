@@ -1,0 +1,12 @@
+.header1{
+	text-align: center;
+}
+.cursor{
+	cursor:pointer;
+}
+
+.add{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}

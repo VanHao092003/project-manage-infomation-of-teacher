@@ -10,5 +10,4 @@ public interface DAO {
 	public void updateInformation(Person person);
 	public Person showTeacher(String ID);
 	public List<Person> showAllPersons();
-	public int salary();
 }

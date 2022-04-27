@@ -71,7 +71,4 @@ public class Controller {
 		return"redirect:/showAllPerson";
 	}
 	
-	
-	
-	
 }

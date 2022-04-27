@@ -38,13 +38,6 @@ public class DAOImplementation implements DAO{
 		String mySQL = "select * from Person";
 		return jdbcTemplate.query(mySQL , new PersonRowMapper());
 	}
-
-	@Override
-	public int salary() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
 	@Override
 	public Person showTeacher(String ID) {
 		String mySQL = "select * from Person where ID =" + ID;

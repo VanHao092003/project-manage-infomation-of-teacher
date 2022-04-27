@@ -57,7 +57,7 @@ public class Configuration implements WebMvcConfigurer{
 		bundleMessageSource.setDefaultEncoding("UTF-8");
 		return bundleMessageSource;
 	}
-
+	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
