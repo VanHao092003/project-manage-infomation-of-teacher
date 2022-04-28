@@ -36,6 +36,7 @@
  				<th class="cursor"><a href='<c:url value="/update/${person.code}"/>'><button>update</button> </a></th>
  			</tr>
  		</c:forEach>
+ 		
 	</table>
 	<button class="add"><p class="cursor " ><a href='<c:url value="/addPerson"/>'>them ngươi dùng</a></p></button>
 	

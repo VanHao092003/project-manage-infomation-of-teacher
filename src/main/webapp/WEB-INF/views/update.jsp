@@ -7,23 +7,50 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href='<c:url value="/resources/css/showAllPerson.css"/>' >
+
 </head>
 <body>
-	<c:url value="/update" var="url"></c:url>
-	<form:form action="${url}" method="POST" modelAttribute="person2" enctype="multipart/form-data">
-		<p>ID: <form:input path="code"/></p>
-		<p style="color: red;"><form:errors path="code"></form:errors> </p>
-		<p>Full name: <form:input path="name"/></p>
-		<p style="color: red;"><form:errors path="name"></form:errors> </p>
-		<p>Age: <form:input path="age"/></p>
-		<p style="color: red;"><form:errors path="age"></form:errors> </p>
-		<p>Home town: <form:input path="homeTown"/></p>
-		<p style="color: red;"><form:errors path="homeTown"></form:errors> </p>
-		<p>Hard salary: <form:input path="hardSalary"/></p>
-		<p style="color: red;"><form:errors path="hardSalary"></form:errors> </p>
-		<p>Bonus: <form:input path="bonus"/></p>
-		<p>Fine: <form:input path="fine"/></p>
-		<form:button type="submit">Submit</form:button>
-	</form:form>
+	<div class="box">
+		<c:url value="/update" var="url"></c:url>
+		<form:form action="${url}" method="POST" modelAttribute="person2" enctype="multipart/form-data">
+			<div class="information">
+				<p class="name">ID: </p>
+				<form:input path="code"/>
+			</div>
+			<p class="error" style="color: red;"><form:errors path="code"></form:errors> </p>
+			<div class="information">
+				<p class="name">Full name: </p>
+				<form:input path="name"/>
+			</div>
+			<p class="error" style="color: red;"><form:errors path="name"></form:errors> </p>
+			<div class="information">
+				<p class="name">Age: </p>
+				<form:input path="age"/>
+			</div>
+			<p class="error" style="color: red;"><form:errors path="age"></form:errors> </p>
+			<div class="information">
+				<p class="name">Home town: </p>
+				<form:input path="homeTown"/>
+			</div>
+			<p  class="error" style="color: red;"><form:errors path="homeTown"></form:errors> </p>
+			<div class="information">
+				<p class="name">Hard salary: </p>
+				<form:input path="hardSalary"/>
+			</div>
+			<p class="error" style="color: red;"><form:errors path="hardSalary"></form:errors> </p>
+			<div class="information">
+				<p class="name">Bonus: </p>
+				<form:input path="bonus"/>
+			</div><br/>
+			<div class="information">
+				<p class="name">Fine: </p>
+				<form:input path="fine"/>
+			</div><br/>
+			<div class="submitFather">
+				<form:button class="submit" type="submit">Submit</form:button>
+			</div>
+		</form:form>
+	</div>
 </body>
 </html>

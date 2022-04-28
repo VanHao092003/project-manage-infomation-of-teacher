@@ -18,27 +18,27 @@
 				<p class="name">ID: </p>
 				<form:input path="code"/>
 			</div>
-			<p style="color: red;"><form:errors path="code"></form:errors> </p>
+			<p class="error" style="color: red;"><form:errors path="code"></form:errors> </p>
 			<div class="information">
 				<p class="name">Full name: </p>
 				<form:input path="name"/>
 			</div>
-			<p style="color: red;"><form:errors path="name"></form:errors> </p>
+			<p class="error" style="color: red;"><form:errors path="name"></form:errors> </p>
 			<div class="information">
 				<p class="name">Age: </p>
 				<form:input path="age" />
 			</div>
-			<p style="color: red;"><form:errors path="age"></form:errors> </p>
+			<p class="error" style="color: red;"><form:errors path="age"></form:errors> </p>
 			<div class="information">
 				<p class="name">Home town: </p>
 				<form:input path="homeTown"/>
 			</div>
-			<p style="color: red;"><form:errors path="homeTown"></form:errors> </p>
+			<p class="error" style="color: red;"><form:errors path="homeTown"></form:errors> </p>
 			<div class="information">
 				<p class="name">Hard salary: </p>
 				<form:input path="hardSalary"/>
 			</div>
-			<p style="color: red;"><form:errors path="hardSalary"></form:errors> </p>
+			<p class="error" style="color: red;"><form:errors path="hardSalary"></form:errors> </p>
 			<div class="information">
 				<p class="name">Bonus: </p>
 				<form:input path="bonus"/>
